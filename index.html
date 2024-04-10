@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing to do list</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <!--this is our main body-->
+    <main class="application">
+        <!--css animation-->
+        
+        <!--this is opening section where the welcome is-->
+        <section class="hello">
+            <h2 class="optitle">
+                Welcome to your to do list , <input type="text" id="nameinsert" placeholder="your name">
+            </h2>
+        </section>
+        <!--this is-the to do list and adding section aka the functional-->
+        <section class="createtodosection">
+            <h3>Create your task</h3>
+            <!--we used a form to utilize the input types-->
+            <form id="newtodo">
+                <h4>what do you wanna do ?</h4>
+                <input type="text" name="content" id="content" placeholder="write your task here" >
+                <h4>Pick your task category</h4>
+                <!--this is category section for our to do list-->
+                <div class="category">
+                    <label>
+                        <input type="radio" name="category" id="category1" value="business">
+                        <span class="bubble business"></span>
+                        <div>Business</div>
+                    </label>
+
+
+
+                    <label>
+                        <input type="radio" name="category" id="category2" value="Personal">
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+                </div>
+                <!--this is where we click to add the task -->
+                <input type="submit" value="add your task">
+
+
+            </form>
+        </section>
+        <!--this is the section our list appears-->
+        <section class="todolistmain" id="todolistmain">
+            <h3>TO DO LIST</h3>
+            <div class="list" id="to-do">
+                <!--this is testing some items-->
+                <!--this is testing for business-->
+               
+            </div>
+        </section>
+        <section id="up"></section>
+        <section id="down"></section>
+        <section id="left"></section>
+        <section id="right"></section>
+        
+    </main>
+   
+     
+
+
+    <script src="js.js"></script>
+  
+</body>
+</html>
